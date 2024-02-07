@@ -1,0 +1,175 @@
+/* COLORS
+Background: #f6f6e8, #f8faf0
+Primary: #b4bfa3, #eaefd3
+Secondary: #d4b777
+Text colors: #666, #28233a;
+Secondary button, label text: #505168 
+Panel backgrounds: #fff
+
+*/
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to top left,
+    #f6f6e8 0%,
+    #f6f6e8 25%,
+    #f8faf0 25%,
+    #f8faf0 75%,
+    #f6f6e8 75%
+  );
+  font-family: 'Montserrat', sans-serif;
+}
+.bg-rail {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.hidden {
+  display: none !important;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* --- BOOTSTRAP OVERRIDES --- */
+/* Borders */
+.border-primary {
+  border-color: #b4bfa3 !important;
+}
+.border-secondary {
+  border-color: #d4b777 !important;
+}
+/* Buttons */
+.btn-primary {
+  background-color: #eaefd3;
+  border-color: #b4bfa3;
+  color: #666;
+  font-size: 1.4rem;
+}
+.btn-primary:hover {
+  background-color: #b4bfa3;
+  border-color: #b4bfa3;
+  color: #666;
+}
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(180, 191, 163, 0.5);
+  background-color: #b4bfa3;
+  border-color: #b4bfa3;
+  color: #666;
+}
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: #eaefd3;
+  border-color: #b4bfa3;
+  color: #666;
+  font-size: 1.4rem;
+}
+
+.btn-secondary {
+  background-color: #505168;
+  border-color: #28233a;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.btn.disabled {
+  background-color: #a4a6ac;
+  border-color: #908f95;
+  color: #fff;
+}
+
+/* --- HOME PAGE ELEMENTS --- */
+/* Name input form element */
+.form-control {
+  color: rgba(173, 146, 85, 0.5);
+  font-size: 1.4rem;
+}
+
+.form-control::placeholder {
+  color: rgba(173, 146, 85, 0.5);
+}
+
+.form-control:focus {
+  color: rgba(173, 146, 85, 0.7);
+  border-color: #b89a5e;
+  box-shadow: 0 0 0 0.2rem rgba(173, 146, 85, 0.25);
+}
+
+/* Difficulty input buttons element */
+.set-difficulty {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.btn-outline-primary {
+  background-color: #fff;
+  border-color: #b4bfa3;
+  border-width: 4px;
+  color: #b4bfa3;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.btn-check:checked + .btn,
+.btn-check + .btn:hover {
+  background-color: #eaefd3;
+  color: #666;
+  border-color: #b4bfa3;
+}
+.btn-check:checked:focus-visible + .btn {
+  box-shadow: 0 0 0 0.25rem rgba(180, 191, 163, 0.5);
+}
+
+.set-difficulty-text {
+  color: #b4bfa3;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.difficulty-text {
+  color: #b4bfa3;
+  font-size: 1rem;
+}
+.toplist {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  min-width: 10%;
+  max-width: 20%;
+  word-wrap: break-word;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+/* --- GAME SCENE ELEMENTS --- */
+/* player info */
+.player-info {
+  background-color: #fff;
+  color: #28233a;
+}
+.player-info--label {
+  color: #505168;
+  font-size: 1.2rem;
+  margin-bottom: -0.5rem;
+}
+.player-info--data {
+  color: #28233a;
+  font-size: 2.4rem;
+}
+hr {
+  color: #d4b777;
+  border-width: 2px;
+}
+
+/* game board */
+.game-board {
+  display: grid;
+  border: #907651 solid 15px;
+  /* Managed by javascript gameBoardView.js */
+  /* grid-template-columns: repeat(5, 1fr); */
+}
+.grid-cell {
+  cursor: pointer;
+}
