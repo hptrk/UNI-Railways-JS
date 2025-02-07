@@ -1,37 +1,42 @@
-Horánszki Patrik Donát
-CJJ14N
-Webprogramozás - számonkérés
-Ezt a megoldást a fent írt hallgató küldte be és készítette a Webprogramozás kurzus számonkéréséhez.
-Kijelentem, hogy ez a megoldás a saját munkám. Nem másoltam vagy használtam harmadik féltől
-származó megoldásokat. Nem továbbítottam megoldást hallgatótársaimnak, és nem is tettem közzé.
-Az Eötvös Loránd Tudományegyetem Hallgatói Követelményrendszere
-(ELTE szervezeti és működési szabályzata, II. Kötet, 74/C. §) kimondja, hogy mindaddig,
-amíg egy hallgató egy másik hallgató munkáját - vagy legalábbis annak jelentős részét -
-saját munkájának mutatja be, az fegyelmi vétségnek számít.
-A fegyelmi vétség legsúlyosabb következménye a hallgató elbocsátása az egyetemről.
+# 🚂 Railways - Interactive Train Track Building Game
 
-Minimálisan teljesítendő (8 pont)
+This project was developed as a **university assignment**, featuring a train track building puzzle game where players must create efficient railway networks while considering terrain obstacles and time constraints.
 
-- [x] Kötelező: A kiinduló állományban lévő readme fájl kitöltése (Nyilatkozat, teljesített pontok) (0 pont)
-- [x] Kötelező: A játékot egy HTML fájl segítségével, keretrendszerek használata nélkül készítette el. (0 pont)
-- [x] Kötelező: A megoldás során teljesen elkerülte a `bad practice` pontban megadott gyakorlatokat. (0 pont)
-- [x] Menü: A főmenüben a megfelelő elemek megjelennek: név megadásának mezője, nehézség választó elem, start gomb (1 pont)
-- [x] Menü: A Start Gombra való kattintáskor átkerülünk a játéktér képernyőjére. (1 pont)
-- [x] Menü: A menüből elérhető a játékszabály leírása. (1 pont)
-- [x] Játéktér: A játéktéren megjelenik a játékos neve, és elindul a megjelenített időzítő (1 pont)
-- [x] Játéktér: A játéktéren megjelenik a nehézségi szintnek megfelelő pályák közül egy véletlenszerűen kiválasztott pálya, és a rajta lévő összes elemtípus (3 pont)
-- [x] Lehelyezés: A pályán lévő mezőkre le tudom helyezni a különböző típusú elemeket (2 pont).
+## 🚀 Features
 
-Alap feladatok (12 pont)
+- **Dynamic Game Board**: Random maps with varying difficulty levels (5x5 and 7x7).
+- **Interactive Track Building**: Place and rotate tracks with intuitive mouse controls.
+- **Multiple Track Types**: Handle different terrain types (mountains, bridges, oases).
+- **Progress Tracking**: Real-time timer and completion validation.
+- **High Score System**: Local storage-based leaderboard system.
+- **Responsive Design**: Bootstrap-powered UI that works across devices.
 
-- [x] Lehelyezés: Az elemeket szabályosan tudom lehelyezni. (Hídon csak egyenesen, Hegynél csak 90°-ban, Oázisra pedig nem tudunk lehelyezni semmit, üres mezőre bármilyet) (4 pont)
-- [x] Ellenőrzés: A játék ellenőrzi, hogy megoldottuk-e a feladványt. Tehát azt, hogy: minden mezőt, amit lehet csak egyszer érint; körbeér az útvonal; minden mezőből át lehet jutni a megfelelő szomszédos mezőbe; mindenhol a megfelelő elem szerepel (4 pont)
-- [x] Játék vége: A játék végén látjuk, hogy mennyi idő alatt teljesítettük a pályát. (1 pont)
-- [x] Toplista: A játék végén megjelenik a toplista, hogy az adott nehézségű pályát kinek mennyi idő alatt sikerült teljesítenie (2 pont)
-- [x] Egyéb: igényes kinézet és kódszervezés (1 pont)
+## 🎮 Gameplay
 
-Plusz feladatok (5 pont)
+- Choose difficulty level (Easy 5x5 or Hard 7x7).
+- Place tracks using left mouse click.
+- Rotate tracks by clicking again.
+- Remove tracks using right mouse click.
+- Complete the railway circuit while avoiding obstacles.
+- Try to achieve the fastest completion time.
 
-- [ ] Mentés: A játék állapota játék közben elmenthető, az oldal újra megnyitása után visszatölthető a legutóbb mentett állapot (1 pont)
-- [x] Mentés: A toplisták LocalStorageban elmentődnek, az oldal újratöltése után is elérhetőek (2 pont)
-- [ ] Elemek lehelyezése: pályarajzolás vonalhúzással (egérgombot lenyomva tartva mozogni a cellákon) (2 pont)
+## 💻 Technologies
+
+- **HTML**
+- **CSS** with Bootstrap 5
+- **Vanilla JavaScript** (ES6+)
+- **Local Storage** for data persistence
+- **Modular Design Pattern**
+
+## 📸 Preview
+
+![Railways Screenshot](screenshot.png)
+
+## 📋 Project Details
+
+- **University**: ELTE
+- **Year**: 2024
+
+---
+
+⭐ This was a university project and is not actively maintained.
